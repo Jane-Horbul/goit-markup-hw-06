@@ -219,16 +219,12 @@ li.active a span {
   border-radius: 50%;
   box-sizing: border-box;
 }
-.btn-modal:focus {
-  outline: none;
-}
+
 .btn-close {
   width: 11px;
   height: 11px;
 }
-.btn-close:focus {
-  outline: none;
-}
+
 .sorter {
   display: flex;
   justify-content: center;
@@ -338,9 +334,7 @@ li.active a span {
   width: 200px;
   height: 50px;
 }
-.btn-main:focus {
-  outline: none;
-}
+
 .btn {
   background-color: var(--bg-color);
   border: none;
@@ -352,9 +346,7 @@ li.active a span {
   margin-top: 110px;
   padding: 10px 25px;
 }
-.btn:focus {
-  outline: none;
-}
+
 .btn:hover {
   background-color: var(--assent-color);
   color: var(--white-color);
@@ -364,9 +356,7 @@ li.active a span {
 .btn-group {
   display: inline-block;
 }
-.btn-group:focus {
-  outline: none;
-}
+
 .btn-group:hover {
   color: var(--white-color);
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
