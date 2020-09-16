@@ -428,16 +428,49 @@
         </div>
 
     </footer>
-    <div class="backdrop is-hidden" data-backdrop>
-        <div class="modal" data-close-modal>
-            <button class="btn-modal">
-                <svg class="btn-close">
-                    <use href="./img/symbol-defs.svg#close-button"></use>
-                </svg>
-            </button>
+    <!--<div class="backdrop is-hidden" data-backdrop>-->
+    <div class="backdrop" data-backdrop>
+        <div class="container">
+            <div class="modal" data-close-modal>
+                <button class="btn-modal">
+                    <svg class="btn-close">
+                        <use href="./img/symbol-defs.svg#close-button"></use>
+                    </svg>
+                </button>
+
+                <form class="modal-form">
+                    <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
+                    <label for="user-name" class="form-field-label">
+                        <span class="form-field-title">Имя</span>
+                        <input type="text" name="user-name" id="user-name" class="form-field" />
+                    </label>
+                    <label for="user-phone" class="form-field-label">
+                        <span class="form-field-title">Телефон</span>
+                        <input type="tel" name="user-phone" id="user-phone" class="form-field" />
+                    </label>
+                    <label class="form-field-label">
+                        <span class="form-field-title">Почта</span>
+                        <input type="email" name="user-email" class="form-field" />
+                    </label>
+                    <label>
+
+                        <span class="form-field-title">Комментарий</span>
+                        <div class="form-field">
+                            <textarea name="user-message" class="form-field-comment" placeholder="Введите текст"
+                                rows="5"></textarea>
+                        </div>
+                    </label>
+                    <label for="checkbox" class="checkbox-label">
+                        <input type="checkbox" class="checkbox visually-hidden" id="checkbox" checked />
+                        <span>Соглашаюсь с рассылкой и принимаю </span>
+                        <a href="">Условия договора</a>
+                    </label>
+                    <button type="submit" class="btn-submit">Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
-    <script>
+    <!--<script>
         const refs = {
             openModalBtn: document.querySelector("[data-open-modal]"),
             closeModalBtn: document.querySelector("[data-close-modal]"),
@@ -455,7 +488,7 @@
             console.log("Click");
         }
 
-    </script>
+    </script>-->
 
 </body>
 

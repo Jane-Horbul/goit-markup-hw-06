@@ -32,6 +32,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+textarea {
+  resize: none;
+  border: 0px;
+}
 .page-header {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -207,6 +211,84 @@ li.active a span {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title {
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.form-field-title {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+.form-field-label {
+  margin-bottom: 10px;
+}
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 448px;
+  padding-right: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.form-field {
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-field-comment {
+  margin: 12px 16px;
+}
+.form-field-comment::placeholder {
+  padding-top: 12px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.checkbox-label {
+  width: 100%;
+  margin: 20px 0;
+}
+.checkbox-label a {
+  color: var(--accent-color);
+}
+.checkbox-label span::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.btn-submit {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--assent-color);
+  border: none;
+  color: var(--white-color);
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .btn-modal {
   position: absolute;
