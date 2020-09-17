@@ -306,7 +306,43 @@ li.active a span {
   width: 11px;
   height: 11px;
 }
-
+.modal-form-footer {
+  display: flex;
+  margin-top: 75px;
+}
+.modal-form-footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.form-footer-field {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-right: 12px;
+}
+.form-footer-field::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-footer-hint {
+  border: 0px;
+  padding: 0px;
+  margin-top: 15px;
+  margin-left: 16px;
+  margin-bottom: 15px;
+}
 .sorter {
   display: flex;
   justify-content: center;
