@@ -444,13 +444,13 @@
         </div>
 
     </footer>
-    <div class="backdrop is-hidden" data-backdrop>-->
+    <div class="backdrop is-hidden" data-backdrop>
         <!--<div class="backdrop" data-backdrop>-->
         <div class="container">
-            <div class="modal" data-close-modal>
-                <button class="btn-modal">
+            <div class="modal">
+                <button class="btn-modal" data-close-modal>
                     <svg class="btn-close">
-                        <use href="./img/symbol-defs.svg#close-button"></use>
+                        <use href="./img/speite-for-forms.svg#btn-close"></use>
                     </svg>
                 </button>
 
@@ -458,35 +458,60 @@
                     <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
                     <label for="user-name" class="form-field-label">
                         <span class="form-field-title">Имя</span>
-                        <input type="text" name="user-name" id="user-name" class="form-field" />
+                        <div class="form-field">
+                            <input type="text" name="user-name" id="user-name" class="form-field-input" />
+                            <svg class="form-field-icon">
+                                <use href="./img/speite-for-forms.svg#modal-name-icon"></use>
+                            </svg>
+                        </div>
                     </label>
                     <label for="user-phone" class="form-field-label">
                         <span class="form-field-title">Телефон</span>
-                        <input type="tel" name="user-phone" id="user-phone" class="form-field" />
-                    </label>
-                    <label class="form-field-label">
-                        <span class="form-field-title">Почта</span>
-                        <input type="email" name="user-email" class="form-field" />
-                    </label>
-                    <label>
-
-                        <span class="form-field-title">Комментарий</span>
                         <div class="form-field">
-                            <textarea name="user-message" class="form-field-comment" placeholder="Введите текст"
-                                rows="5"></textarea>
+                            <input type="tel" name="user-phone" id="user-phone" class="form-field-input" />
+                            <svg class="form-field-icon">
+                                <use href="./img/speite-for-forms.svg#modal-phone-icon"></use>
+                            </svg>
                         </div>
                     </label>
-                    <label for="checkbox" class="checkbox-label">
-                        <input type="checkbox" class="checkbox visually-hidden" id="checkbox" checked />
-                        <span>Соглашаюсь с рассылкой и принимаю </span>
-                        <a href="">Условия договора</a>
+                    <label for="user-email" class="form-field-label">
+                        <span class="form-field-title">Почта</span>
+                        <div class="form-field">
+                            <input type="email" name="user-email" id="user-email" class="form-field-input" />
+                            <svg class="form-field-icon">
+                                <use href="./img/speite-for-forms.svg#modal-mail-icon"></use>
+                            </svg>
+                        </div>
                     </label>
-                    <button type="submit" class="btn-submit">Отправить</button>
+                    <label>
+                        <span class="form-field-title">Комментарий</span>
+                        <div class="form-field-message">
+                            <textarea name="user-message" class="form-field-comment" placeholder="Введите текст"
+                                rows="3"></textarea>
+                        </div>
+                    </label>
+                    <div class="modal-checkbox">
+                        <label for="checkbox" class="checkbox-label">
+
+                            <input type="checkbox" class="checkbox is-hidden" id="checkbox" checked />
+
+                            <svg class="checkbox-icon">
+                                <use href="./img/speite-for-forms.svg#modal-yes-icon"></use>
+                            </svg>
+
+                            <div class="modal-checkbox">Соглашаюсь с рассылкой и принимаю
+                                <a href=""><span class="link-agree"><u>Условия договора</u></span></a>
+                            </div>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="modal-btn-submit">
+                        <span class="modal-btn-submit-text">Отправить</span></button>
                 </form>
             </div>
         </div>
     </div>
-    <!--<script>
+    <script>
         const refs = {
             openModalBtn: document.querySelector("[data-open-modal]"),
             closeModalBtn: document.querySelector("[data-close-modal]"),
@@ -504,7 +529,7 @@
             console.log("Click");
         }
 
-    </script>-->
+    </script>
 
 </body>
 
