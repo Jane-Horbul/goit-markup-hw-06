@@ -345,6 +345,7 @@ li.active a span {
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.06em;
+  outline-width: 0px;
 }
 .btn-submit-text {
   margin-top: auto;
@@ -363,6 +364,7 @@ li.active a span {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
+  outline-width: 0px;
 }
 .modal-btn-submit {
   display: flex;
@@ -379,6 +381,7 @@ li.active a span {
   text-align: center;
   letter-spacing: 0.06em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  outline-width: 0px;
 }
 .modal-btn-submit-text {
   margin-top: auto;
@@ -389,6 +392,7 @@ li.active a span {
 .btn-close {
   width: 11px;
   height: 11px;
+  outline-width: 0px;
 }
 .btn-close:focus,
 .btn-close:hover {
@@ -418,6 +422,7 @@ li.active a span {
   background-color: transparent;
   margin-top: 20px;
   margin-right: 12px;
+  outline-width: 0px;
 }
 .form-footer-hint::placeholder {
   font-size: 16px;
@@ -435,6 +440,7 @@ li.active a span {
   margin-right: 0px;
   margin-bottom: 15px;
   background-color: transparent;
+  outline-width: 0px;
 }
 .modal-footer-icon {
   width: 24px;
@@ -553,6 +559,7 @@ li.active a span {
   margin-top: 45px;
   width: 200px;
   height: 50px;
+  outline-width: 0px;
 }
 
 .btn {
@@ -565,6 +572,7 @@ li.active a span {
   margin-bottom: 50px;
   margin-top: 110px;
   padding: 10px 25px;
+  outline-width: 0px;
 }
 
 .btn:hover {
