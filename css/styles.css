@@ -276,6 +276,7 @@ li.active a span {
 .form-field-comment {
   width: 425px;
   margin: 12px 16px;
+  outline: transparent;
 }
 .form-field-input {
   width: 405px;
@@ -283,6 +284,7 @@ li.active a span {
   padding-top: 12px;
   background-color: transparent;
   border: 0px;
+  outline: transparent;
 }
 .form-field-comment::placeholder {
   padding-top: 12px;
